@@ -1,0 +1,12 @@
+$breakpoints: (
+  "small": em(481),
+  "medium": em(700),
+  "large": em(1025),
+  "x-large": em(1200),
+);
+
+$breakpoints-max: (
+  "small": em(481.9988),
+  "medium": em(699.9988),
+  "large": em(1024.9988),
+);
