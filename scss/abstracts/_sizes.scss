@@ -1,8 +1,30 @@
+@use "functions" as *;
+
 $sizes: (
-  "8": 0.5rem,
-  "12": 0.75rem,
-  "16": 1rem,
-  "20": 1.25rem,
-  "32": 2rem,
-  "36": 2.25rem,
+  "4": rem(4),
+  "8": rem(8),
+  "12": rem(12),
+  "16": rem(16),
+  "24": rem(24),
+  "32": rem(32),
+  "48": rem(48),
+  "60": rem(60),
+  "72": rem(72),
+  "96": rem(96),
 );
+
+// Section options
+$padding-section: rem(112);
+$padding-hero: rem(320);
+
+// Container Options
+$padding-container-inline: rem(16);
+$container-max-width: rem(1244);
+$container-max-width-wide: rem(1600);
+
+// Grid Options
+$padding-card-body: rem(80);
+$grid-gap: rem(25);
+
+// Flex Options
+$flex-group-gap: rem(16);

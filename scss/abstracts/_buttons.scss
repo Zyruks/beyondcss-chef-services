@@ -1,0 +1,26 @@
+@use "functions" as *;
+@use "colors" as *;
+
+$buttons: (
+  "display": inline-flex,
+  "padding-block": rem(18),
+  "padding-inline": rem(32),
+  "border": 0,
+  "line-height": 1,
+  "text-transform": uppercase,
+  "text-decoration": none,
+  "cursor": pointer,
+);
+$accent-btn: (
+  "color": getter($colors, "primary", "400"),
+  "background-color": getter($colors, "neutral", "900"),
+);
+$outline-size: rem(5);
+$outline-btn: (
+  "color": getter($colors, "neutral", "100"),
+  "background-color": transparent,
+  "outline-size": $outline-size,
+  "outline-style": solid,
+  "outline-color": getter($colors, "neutral", "100"),
+  "outline-offset": calc($outline-size * -1),
+);
