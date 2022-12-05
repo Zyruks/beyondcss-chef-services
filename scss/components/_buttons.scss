@@ -1,0 +1,37 @@
+@use "../abstracts/" as *;
+
+button,
+.button {
+  display: getter($buttons, "display");
+
+  padding-block: getter($buttons, "padding-block");
+
+  padding-inline: getter($buttons, "padding-inline");
+
+  border: getter($buttons, "border");
+
+  line-height: getter($buttons, "line-height");
+  text-transform: getter($buttons, "text-transform");
+  text-decoration: getter($buttons, "text-decoration");
+
+  cursor: getter($buttons, "cursor");
+}
+
+.button[data-type="accent"] {
+  color: getter($accent-btn, "color");
+
+  background-color: getter($accent-btn, "background-color");
+}
+
+.button[data-type="outline"] {
+  color: getter($outline-btn, "color");
+
+  background-color: transparent;
+
+  outline:
+    getter($outline-btn, "outline-size") // outline size
+    getter($outline-btn, "outline-style") // outline Style
+    getter($outline-btn, "outline-color"); // outline color
+
+  outline-offset: getter($outline-btn, "outline-offset");
+}
