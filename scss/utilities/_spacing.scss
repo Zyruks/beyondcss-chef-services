@@ -1,5 +1,18 @@
 @use "../abstracts" as *;
 
+// mx = M: Margin, X: X-Axis and Y: Y-Axis
+.mx-auto {
+  margin-inline: auto;
+}
+
+.hero {
+  padding-block: $padding-hero;
+}
+
+.section {
+  padding-block: $padding-section;
+}
+
 @each $size-name, $size-value in $sizes {
   .margin {
     &-#{$size-name} {
@@ -24,6 +37,7 @@
       margin-inline: $size-value;
     }
   }
+
   .padding {
     &-#{$size-name} {
       padding: $size-value;

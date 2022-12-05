@@ -1,9 +1,8 @@
 @use "../abstracts" as *;
 
-//Font Sizes
 @each $font-size, $sizes-map in $font-sizes {
   @each $size-name, $size-value in $sizes-map {
-    @if ($font-size == "classic") {
+    @if $font-size == "classic" {
       .fs-#{$size-name} {
         font-size: var(--fs-#{$size-name});
       }
@@ -12,18 +11,5 @@
         font-size: var(--#{$font-size}-fs-#{$size-name});
       }
     }
-  }
-}
-// Font Weight
-@each $weight-name, $weight-value in $font-weights {
-  .fw-#{$weight-name} {
-    font-weight: var(--fw-#{$weight-name});
-  }
-}
-
-// Line Height
-@each $height-name, $height-value in $line-heights {
-  .lh-#{$height-name} {
-    line-height: var(--fw-#{$height-name});
   }
 }
