@@ -1,0 +1,26 @@
+@use "../abstracts/" as *;
+
+.section-header {
+  &:has(p) {
+    margin-block-end: size(36);
+  }
+
+  &:not(:has(p)) {
+    margin-block-end: calc(size(36) * 2.5);
+  }
+
+  &[data-decoration="true"]::after {
+    display: block;
+    inline-size: 10rem;
+    block-size: rem(1);
+
+    background-color: currentcolor;
+
+    content: "";
+    margin-block: size(36);
+
+    .txt-center & {
+      margin-inline: auto;
+    }
+  }
+}

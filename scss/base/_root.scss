@@ -8,7 +8,7 @@
   }
 
   @each $font-family, $value in $font-families {
-    --ff-#{$font-family}: #{$value}, serif;
+    --ff-#{$font-family}: "#{$value}", serif;
   }
 
   // font sizes

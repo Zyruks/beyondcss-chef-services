@@ -12,15 +12,15 @@ $buttons: (
   "cursor": pointer,
 );
 $accent-btn: (
-  "color": getter($colors, "primary", "400"),
-  "background-color": getter($colors, "neutral", "900"),
+  "color": clr("neutral", "900"),
+  "background-color": clr("primary", "400"),
 );
 $outline-size: rem(5);
 $outline-btn: (
-  "color": getter($colors, "neutral", "100"),
+  "color": clr("neutral", "100"),
   "background-color": transparent,
   "outline-size": $outline-size,
   "outline-style": solid,
-  "outline-color": getter($colors, "neutral", "100"),
+  "outline-color": clr("neutral", "100"),
   "outline-offset": calc($outline-size * -1),
 );

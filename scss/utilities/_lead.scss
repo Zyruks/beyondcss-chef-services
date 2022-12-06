@@ -1,0 +1,12 @@
+@use "../abstracts/" as *;
+
+.lead {
+  color: var(--clr-neutral-900);
+  font-weight: var(--fw-700);
+  font-size: var(--fs-600);
+  text-transform: uppercase;
+
+  & + p {
+    margin-block-start: 0;
+  }
+}

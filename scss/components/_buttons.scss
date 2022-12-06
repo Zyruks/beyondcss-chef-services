@@ -4,17 +4,18 @@ button,
 .button {
   display: getter($buttons, "display");
 
-  padding-block: getter($buttons, "padding-block");
-
-  padding-inline: getter($buttons, "padding-inline");
-
   border: getter($buttons, "border");
+
+  font-family: var(--ff-base);
 
   line-height: getter($buttons, "line-height");
   text-transform: getter($buttons, "text-transform");
   text-decoration: getter($buttons, "text-decoration");
 
   cursor: getter($buttons, "cursor");
+  padding-block: getter($buttons, "padding-block");
+
+  padding-inline: getter($buttons, "padding-inline");
 }
 
 .button[data-type="accent"] {
@@ -28,8 +29,7 @@ button,
 
   background-color: transparent;
 
-  outline:
-    getter($outline-btn, "outline-size") // outline size
+  outline: getter($outline-btn, "outline-size") // outline size
     getter($outline-btn, "outline-style") // outline Style
     getter($outline-btn, "outline-color"); // outline color
 

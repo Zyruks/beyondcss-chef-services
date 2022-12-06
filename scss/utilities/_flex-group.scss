@@ -4,4 +4,5 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--flex-gap, $flex-group-gap);
+  inline-size: fit-content;
 }

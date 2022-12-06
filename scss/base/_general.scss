@@ -1,6 +1,9 @@
 @use "../abstracts/" as *;
 
-h1 {
-  font-size: 1rem;
-  color: red;
+body {
+  color: clr("neutral", "400");
+  font-weight: var(--fw-400);
+  font-size: var(--fs-400);
+  font-family: var(--ff-base);
+  line-height: var(--lh-600);
 }

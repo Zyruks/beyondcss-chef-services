@@ -1,5 +1,7 @@
 @use "sass:math";
 @use "sass:map";
+@use "sizes" as *;
+@use "colors" as *;
 
 // font-size: rem(30);
 
@@ -35,5 +37,25 @@
     @error "that is not a valid key in the map";
   } @else {
     @return $output;
+  }
+}
+
+@function size($size) {
+  $output-size: map.get($sizes, $size);
+
+  @if ($output-size == null) {
+    @error "that is not a valid size";
+  } @else {
+    @return $output-size;
+  }
+}
+
+@function clr($color...) {
+  $output-color: map.get($colors, $color...);
+
+  @if ($output-color == null) {
+    @error "that is not a valid color";
+  } @else {
+    @return $output-color;
   }
 }
