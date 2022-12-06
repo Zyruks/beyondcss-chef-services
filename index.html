@@ -4,10 +4,298 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
-    <link rel="stylesheet" href="/scss/main.scss" />
+    <title>BeyondCSS Chef Challenge</title>
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <!--? Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--? Google end -->
   </head>
   <body>
-    <script type="module" src="/main.js"></script>
+    <header class="primary-header | margin-block-start-24">
+      <img
+        class="logo mx-auto"
+        src="assets/logo.svg"
+        alt="Chef John Wellington**"
+      />
+      <nav class="primary-nav | margin-block-start-24">
+        <ul class="flex-group mx-auto">
+          <li><a href="#about">About</a></li>
+          <li><a href="#meals">Meals</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero | bg-neutral-900 txt-neutral-200 txt-center">
+        <div class="container | mx-auto">
+          <h1 class="fs-900 ff-accent margin-block-end-48">
+            Homecooked meals delivered straight to your door
+          </h1>
+          <div class="mx-auto flex-group">
+            <button class="button" data-type="accent">Place order</button>
+            <a class="button" data-type="outline" href="#">More info</a>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="about">
+        <div class="container">
+          <div class="even-columns">
+            <div>
+              <picture>
+                <source srcset="assets/about.avif" type="image/avif" />
+                <source srcset="assets/about.webp" type="image/webp" />
+                <img
+                  class="shift-up box-shadow-1"
+                  src="assets/about.jpg"
+                  alt="several plates of food seen from above on a white table, some with figs and basil and others with grapefruit and sliced bananas with a brown sauce on top"
+                />
+              </picture>
+            </div>
+            <div class="flow">
+              <header class="section-header js-section-header">
+                <h2 class="fs-800 ff-accent txt-primary-500">
+                  This is a nice big heading
+                </h2>
+                <p class="fs-600 txt-neutral-400 uppercase">
+                  We do all the work, so all you have to do is sit back and
+                  enjoy
+                </p>
+              </header>
+              <p class="lead">It's ready to go</p>
+              <p>
+                Whether it's for a romantic evening with your significant other
+                or if you're hosting a large party and need food for a big
+                group, we're here to help!
+              </p>
+              <p>
+                We can cater to whatever your needs are, and ensure that our
+                delicious food is delivered at the perfect moment, fresh, hot,
+                and ready to eat exactly when you need it to be there.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section | bg-neutral-200">
+        <div class="container | txt-center">
+          <header class="section-header" data-decoration="true">
+            <h2 class="fs-800 fw-400 ff-accent txt-primary-500">
+              This is a nice big heading
+            </h2>
+            <p class="fs-600 uppercase">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+              alias!
+            </p>
+          </header>
+          <div class="grid-auto-fit">
+            <div>
+              <h3 class="fs-500 fw-700 txt-neutral-900">
+                Lorem ipsum dolor sit.
+              </h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+                dolores incidunt labore rem eligendi maxime.
+              </p>
+            </div>
+            <div>
+              <h3 class="fs-500 fw-700 txt-neutral-900">
+                Praesentium nemo alias labore!
+              </h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+                dolores incidunt labore rem eligendi maxime.
+              </p>
+            </div>
+            <div>
+              <h3 class="fs-500 fw-700 txt-neutral-900">
+                Facere officiis dolor odio.
+              </h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+                dolores incidunt labore rem eligendi maxime.
+              </p>
+            </div>
+            <div>
+              <h3 class="fs-500 fw-700 txt-neutral-900">
+                Quasi nobis aspernatur iste.
+              </h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+                dolores incidunt labore rem eligendi maxime.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section | bg-neutral-200" id="meals">
+        <div class="container | txt-center" data-type="wide">
+          <header class="section-header" data-decoration="true">
+            <h2 class="fs-800 fw-400 ff-accent txt-primary-500">
+              This is a nice big heading
+            </h2>
+            <p class="fs-600 uppercase">
+              Lorem ipsum dolor sit amet consectetur adipisicing el Vitae,
+              alias!
+            </p>
+          </header>
+          <div class="even-columns">
+            <!-- column one -->
+            <figure class="interactive-figure">
+              <picture>
+                <source srcset="assets/meal-01.avif" type="image/avif" />
+                <source srcset="assets/meal-01.wepb" type="image/webp" />
+                <img
+                  src="assets/meal-01.jpg"
+                  alt="A nicely presented plate with a cooked peice of salmon on top of a bed of vegetables, with more vegetables on top of it"
+                  loading="lazy"
+                />
+              </picture>
+              <figcaption>
+                <h3 class="fs-500 fw-700 uppercase">About this meal</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, adipisci.
+                </p>
+              </figcaption>
+            </figure>
+            <!-- column two -->
+
+            <figure class="interactive-figure">
+              <picture>
+                <source srcset="assets/meal-02.avif" type="image/avif" />
+                <source srcset="assets/meal-02.wepb" type="image/webp" />
+                <img
+                  src="assets/meal-02.jpg"
+                  alt="A nicely presented plate with a cooked peice of salmon on top of a bed of vegetables, with more vegetables on top of it"
+                  loading="lazy"
+                />
+              </picture>
+              <figcaption>
+                <h3 class="fs-500 fw-700 uppercase">About this meal</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, adipisci.
+                </p>
+              </figcaption>
+            </figure>
+            <!-- column three -->
+
+            <figure class="interactive-figure">
+              <picture>
+                <source srcset="assets/meal-03.avif" type="image/avif" />
+                <source srcset="assets/meal-03.wepb" type="image/webp" />
+                <img
+                  src="assets/meal-03.jpg"
+                  alt="A nicely presented plate with a cooked peice of salmon on top of a bed of vegetables, with more vegetables on top of it"
+                  loading="lazy"
+                />
+              </picture>
+              <figcaption>
+                <h3 class="fs-500 fw-700 uppercase">About this meal</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, adipisci.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="testimonials">
+        <div class="container">
+          <h2 class="txt-primary-500 ff-accent">
+            What our clients are saying about us
+          </h2>
+
+          <div class="even-columns">
+            <div class="card | box-shadow-1">
+              <picture>
+                <source srcset="assets/testimonial-01.avif" type="image/avif" />
+                <source srcset="assets/testimonial-01.webp" type="image/webp" />
+                <img
+                  src="assets/testimonial-01.jpg"
+                  alt="A man standing outside, smiling"
+                />
+              </picture>
+              <div class="card__body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam egestas egestas dignissim. Quisque pretium nisi a
+                  rhoncus posuere. Ut posuere mauris nisl, sed consequat orci
+                  ultrices ac. Fusce et elit et nisl eleifend hendrerit. Nulla
+                  ac aliquam mauris. Aenean quam lacus, auctor eu lacus.
+                </p>
+              </div>
+              <div class="testimonial__footer | padding-16 bg-neutral-200">
+                <p class="fs-500 txt-primary-500">John Deer</p>
+                <p>Manager at FoodCo.</p>
+              </div>
+            </div>
+            <div class="card | box-shadow-1">
+              <picture>
+                <source srcset="assets/testimonial-02.avif" type="image/avif" />
+                <source srcset="assets/testimonial-02.webp" type="image/webp" />
+                <img
+                  src="assets/testimonial-02.jpg"
+                  alt="A man standing outside, smiling"
+                />
+              </picture>
+              <div class="card__body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam egestas egestas dignissim. Quisque pretium nisi a
+                  rhoncus posuere. Ut posuere mauris nisl, sed consequat orci
+                  ultrices ac. Fusce et elit et nisl eleifend hendrerit. Nulla
+                  ac aliquam mauris. Aenean quam lacus, auctor eu lacus.
+                </p>
+              </div>
+              <div class="testimonial__footer | padding-16 bg-neutral-200">
+                <p class="fs-500 txt-primary-500">John Deer</p>
+                <p>Manager at FoodCo.</p>
+              </div>
+            </div>
+            <div class="card | box-shadow-1">
+              <picture>
+                <source srcset="assets/testimonial-03.avif" type="image/avif" />
+                <source srcset="assets/testimonial-03.webp" type="image/webp" />
+                <img
+                  src="assets/testimonial-03.jpg"
+                  alt="A man standing outside, smiling"
+                />
+              </picture>
+              <div class="card__body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam egestas egestas dignissim. Quisque pretium nisi a
+                  rhoncus posuere. Ut posuere mauris nisl, sed consequat orci
+                  ultrices ac. Fusce et elit et nisl eleifend hendrerit. Nulla
+                  ac aliquam mauris. Aenean quam lacus, auctor eu lacus.
+                </p>
+              </div>
+              <div class="testimonial__footer | padding-16 bg-neutral-200">
+                <p class="fs-500 txt-primary-500">John Deer</p>
+                <p>Manager at FoodCo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="primary-footer section | bg-neutral-900 txt-neutral-100 text-center flow"
+    >
+      <div class="container">
+        <p class="fw-700">Homecooked mealsdelivered straight to your door</p>
+        <p>©2022 Persronal Chef Services</p>
+        <p>555 Boulevard Anywhere, Montreal, Quebec, J1S 1S9 | 123-555-1234</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
