@@ -32,8 +32,8 @@
     </header>
     <main>
       <section class="hero | bg-neutral-900 txt-neutral-200 txt-center">
-        <div class="container | mx-auto">
-          <h1 class="fs-900 ff-accent margin-block-end-48">
+        <div class="container | mx-auto txt-center" data-type="wide">
+          <h1 class="fs-900 ff-accent margin-block-end-48" data-type="fluid">
             Homecooked meals delivered straight to your door
           </h1>
           <div class="mx-auto flex-group">
@@ -58,10 +58,10 @@
             </div>
             <div class="flow">
               <header class="section-header js-section-header">
-                <h2 class="fs-800 ff-accent txt-primary-500">
+                <h2 class="fs-800 ff-accent txt-primary-500" data-type="fluid">
                   This is a nice big heading
                 </h2>
-                <p class="fs-600 txt-neutral-400 uppercase">
+                <p class="fs-600 txt-neutral-400 uppercase" data-type="fluid">
                   We do all the work, so all you have to do is sit back and
                   enjoy
                 </p>
@@ -82,65 +82,68 @@
         </div>
       </section>
       <section class="section | bg-neutral-200">
-        <div class="container | txt-center">
-          <header class="section-header" data-decoration="true">
-            <h2 class="fs-800 fw-400 ff-accent txt-primary-500">
-              This is a nice big heading
+        <div class="container | txt-center" data-type="wide">
+          <header
+            class="section-header js-section-header"
+            data-decoration="true"
+          >
+            <h2
+              class="fs-800 fw-400 ff-accent txt-primary-500"
+              data-type="fluid"
+            >
+              We make great food
             </h2>
-            <p class="fs-600 uppercase">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-              alias!
+            <p class="fs-600 uppercase" data-type="fluid">
+              Cooking is our passion, with quality and freshness being of the
+              utmost importance
             </p>
           </header>
           <div class="grid-auto-fit">
             <div>
-              <h3 class="fs-500 fw-700 txt-neutral-900">
-                Lorem ipsum dolor sit.
-              </h3>
+              <h3 class="fs-500 fw-700 txt-neutral-900">Fresh ingredients</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
-                dolores incidunt labore rem eligendi maxime.
+                We take food seriously, and the first thing to making great food
+                is using fresh ingredients. If the ingredients don't meet our
+                standard, we don't use them.
               </p>
             </div>
             <div>
-              <h3 class="fs-500 fw-700 txt-neutral-900">
-                Praesentium nemo alias labore!
-              </h3>
+              <h3 class="fs-500 fw-700 txt-neutral-900">Professional chef</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
-                dolores incidunt labore rem eligendi maxime.
+                Chef wellington is a professionally trained chef who's worked in
+                top kitchens around the world.
               </p>
             </div>
             <div>
-              <h3 class="fs-500 fw-700 txt-neutral-900">
-                Facere officiis dolor odio.
-              </h3>
+              <h3 class="fs-500 fw-700 txt-neutral-900">Ready for you</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
-                dolores incidunt labore rem eligendi maxime.
+                Stop using services where you have to re-head your food.We get
+                it to your door ready to eat, without sacrificing any quality at
+                all.
               </p>
             </div>
             <div>
-              <h3 class="fs-500 fw-700 txt-neutral-900">
-                Quasi nobis aspernatur iste.
-              </h3>
+              <h3 class="fs-500 fw-700 txt-neutral-900">Made with love</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
-                dolores incidunt labore rem eligendi maxime.
+                Food is our passion, and we infuse that love and passion into
+                every single plate that we make and deliver
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section class="section | bg-neutral-200" id="meals">
+      <section class="section | bg-neutral-900" id="meals">
         <div class="container | txt-center" data-type="wide">
-          <header class="section-header" data-decoration="true">
-            <h2 class="fs-800 fw-400 ff-accent txt-primary-500">
-              This is a nice big heading
+          <header
+            class="section-header js-section-header | txt-neutral-100"
+            data-decoration="true"
+          >
+            <h2 class="fs-800 fw-400 ff-accent" data-type="fluid">
+              Some of our meals
             </h2>
-            <p class="fs-600 uppercase">
-              Lorem ipsum dolor sit amet consectetur adipisicing el Vitae,
-              alias!
+            <p class="fs-600 uppercase" data-type="fluid">
+              Here are a few of our delicious, home-cooked meals that are sure
+              to please your taste buds.
             </p>
           </header>
           <div class="even-columns">
@@ -155,11 +158,13 @@
                   loading="lazy"
                 />
               </picture>
-              <figcaption>
-                <h3 class="fs-500 fw-700 uppercase">About this meal</h3>
+              <figcaption class="padding-24 txt-start">
+                <h3 class="fs-500 fw-700 uppercase">
+                  Pan-searred salmon and veges
+                </h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Similique, adipisci.
+                  A pan-seared salmon filet, served on top of a giant bed of
+                  delicious vegetables
                 </p>
               </figcaption>
             </figure>
@@ -175,11 +180,13 @@
                   loading="lazy"
                 />
               </picture>
-              <figcaption>
-                <h3 class="fs-500 fw-700 uppercase">About this meal</h3>
+              <figcaption class="padding-24 txt-start">
+                <h3 class="fs-500 fw-700 uppercase">
+                  Pan-seared salmon and veges
+                </h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Similique, adipisci.
+                  A pan-seared salmon filet, served on top of a giant bed of
+                  delicious vegetables
                 </p>
               </figcaption>
             </figure>
@@ -195,11 +202,13 @@
                   loading="lazy"
                 />
               </picture>
-              <figcaption>
-                <h3 class="fs-500 fw-700 uppercase">About this meal</h3>
+              <figcaption class="padding-24 txt-start">
+                <h3 class="fs-500 fw-700 uppercase">
+                  Pan-searred salmon and veges
+                </h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Similique, adipisci.
+                  A pan-seared salmon filet, served on top of a giant bed of
+                  delicious vegetables
                 </p>
               </figcaption>
             </figure>
@@ -207,13 +216,15 @@
         </div>
       </section>
       <section class="section" id="testimonials">
-        <div class="container">
-          <h2 class="txt-primary-500 ff-accent">
-            What our clients are saying about us
-          </h2>
+        <div class="container txt-center" data-type="wide">
+          <header class="section-header js-section-header">
+            <h2 class="txt-primary-500 ff-accent fs-800">
+              What our clients are saying about us
+            </h2>
+          </header>
 
           <div class="even-columns">
-            <div class="card | box-shadow-1">
+            <div class="card | box-shadow-1" data-type="testimonials">
               <picture>
                 <source srcset="assets/testimonial-01.avif" type="image/avif" />
                 <source srcset="assets/testimonial-01.webp" type="image/webp" />
@@ -224,11 +235,11 @@
               </picture>
               <div class="card__body">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam egestas egestas dignissim. Quisque pretium nisi a
-                  rhoncus posuere. Ut posuere mauris nisl, sed consequat orci
-                  ultrices ac. Fusce et elit et nisl eleifend hendrerit. Nulla
-                  ac aliquam mauris. Aenean quam lacus, auctor eu lacus.
+                  John Wellington and his team make the most amazing food. Every
+                  single time I've ordered, I've been blown-away by the quality.
+                  You can tell they only use fresh ingredients and put a lot of
+                  love into every single meal they make! You really can't ask
+                  for anything more, it's always fantastic
                 </p>
               </div>
               <div class="testimonial__footer | padding-16 bg-neutral-200">
@@ -236,7 +247,7 @@
                 <p>Manager at FoodCo.</p>
               </div>
             </div>
-            <div class="card | box-shadow-1">
+            <div class="card | box-shadow-1" data-type="testimonials">
               <picture>
                 <source srcset="assets/testimonial-02.avif" type="image/avif" />
                 <source srcset="assets/testimonial-02.webp" type="image/webp" />
@@ -247,19 +258,18 @@
               </picture>
               <div class="card__body">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam egestas egestas dignissim. Quisque pretium nisi a
-                  rhoncus posuere. Ut posuere mauris nisl, sed consequat orci
-                  ultrices ac. Fusce et elit et nisl eleifend hendrerit. Nulla
-                  ac aliquam mauris. Aenean quam lacus, auctor eu lacus.
+                  I'm so happy that i found John Wellington! the food is on par
+                  with some of the best restaurants I've ever eaten at, but from
+                  the comfort of my own home. Every single time I order, it's
+                  mouthwateringly delicious.
                 </p>
               </div>
               <div class="testimonial__footer | padding-16 bg-neutral-200">
-                <p class="fs-500 txt-primary-500">John Deer</p>
-                <p>Manager at FoodCo.</p>
+                <p class="fs-500 txt-primary-500">Marie Condo</p>
+                <p>Foodie</p>
               </div>
             </div>
-            <div class="card | box-shadow-1">
+            <div class="card | box-shadow-1" data-type="testimonials">
               <picture>
                 <source srcset="assets/testimonial-03.avif" type="image/avif" />
                 <source srcset="assets/testimonial-03.webp" type="image/webp" />
@@ -270,11 +280,11 @@
               </picture>
               <div class="card__body">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam egestas egestas dignissim. Quisque pretium nisi a
-                  rhoncus posuere. Ut posuere mauris nisl, sed consequat orci
-                  ultrices ac. Fusce et elit et nisl eleifend hendrerit. Nulla
-                  ac aliquam mauris. Aenean quam lacus, auctor eu lacus.
+                  From simple meals to some of the most extravagant things I've
+                  ever eaten, John and his team always deliver. Every time i
+                  order something new, I just can't wait for it to be delivered
+                  and i know how mouth-wateringly delicious it's going to be. if
+                  you like good food, you have to give it a try!
                 </p>
               </div>
               <div class="testimonial__footer | padding-16 bg-neutral-200">
@@ -287,9 +297,9 @@
       </section>
     </main>
     <footer
-      class="primary-footer section | bg-neutral-900 txt-neutral-100 text-center flow"
+      class="primary-footer section | bg-neutral-900 txt-neutral-100 txt-center"
     >
-      <div class="container">
+      <div class="container | flow">
         <p class="fw-700">Homecooked mealsdelivered straight to your door</p>
         <p>©2022 Persronal Chef Services</p>
         <p>555 Boulevard Anywhere, Montreal, Quebec, J1S 1S9 | 123-555-1234</p>
