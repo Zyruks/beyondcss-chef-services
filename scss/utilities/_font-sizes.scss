@@ -13,6 +13,10 @@
     } @else {
       .fs-#{$size-name}[data-type="#{$font-size}"] {
         font-size: var(--#{$font-size}-fs-#{$size-name});
+
+        @if ($size-name > 600) {
+          line-height: var(--lh-400);
+        }
       }
     }
   }
