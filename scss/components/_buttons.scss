@@ -6,32 +6,41 @@ button,
 
   border: getter($buttons, "border");
 
-  font-family: var(--ff-base);
+  font-weight: getter($buttons, "font-weight");
 
+  font-family: getter($buttons, "font-family");
   line-height: getter($buttons, "line-height");
   text-transform: getter($buttons, "text-transform");
   text-decoration: getter($buttons, "text-decoration");
 
   cursor: getter($buttons, "cursor");
+
+  transition: getter($buttons, "transition");
   padding-block: getter($buttons, "padding-block");
 
   padding-inline: getter($buttons, "padding-inline");
-}
 
-.button[data-type="accent"] {
-  color: getter($accent-btn, "color");
+  &[data-type="accent"] {
+    color: getter($accent-btn, "color");
 
-  background-color: getter($accent-btn, "background-color");
-}
+    background-color: getter($accent-btn, "background-color");
+  }
 
-.button[data-type="outline"] {
-  color: getter($outline-btn, "color");
+  &[data-type="outline"] {
+    color: getter($outline-btn, "color");
 
-  background-color: transparent;
+    background-color: transparent;
 
-  outline: getter($outline-btn, "outline-size") // outline size
-    getter($outline-btn, "outline-style") // outline Style
-    getter($outline-btn, "outline-color"); // outline color
+    outline: getter($outline-btn, "outline-size")
+      getter($outline-btn, "outline-style")
+      getter($outline-btn, "outline-color");
 
-  outline-offset: getter($outline-btn, "outline-offset");
+    outline-offset: getter($outline-btn, "outline-offset");
+  }
+
+  &:is(:hover, :focus) {
+    color: clr("neutral", "900");
+
+    background: clr("neutral", "100");
+  }
 }

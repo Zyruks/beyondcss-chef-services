@@ -23,4 +23,12 @@
       margin-inline: auto;
     }
   }
+
+  p {
+    max-inline-size: 60ch;
+
+    .txt-center & {
+      margin-inline: auto;
+    }
+  }
 }

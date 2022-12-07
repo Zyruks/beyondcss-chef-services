@@ -5,9 +5,13 @@
     @if $font-size == "classic" {
       .fs-#{$size-name} {
         font-size: var(--fs-#{$size-name});
+
+        @if ($size-name > 600) {
+          line-height: var(--lh-400);
+        }
       }
     } @else {
-      .#{$font-size}-fs-#{$size-name} {
+      .fs-#{$size-name}[data-type="#{$font-size}"] {
         font-size: var(--#{$font-size}-fs-#{$size-name});
       }
     }

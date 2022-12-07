@@ -4,8 +4,13 @@
   display: grid;
   gap: var(--grid-gap, $grid-gap);
 
-  @include mq(medium) {
+  @include mq(large) {
     grid-auto-columns: 1fr;
     grid-auto-flow: column;
+  }
+
+  & > * {
+    max-inline-size: rem(500);
+    margin-inline: auto;
   }
 }
