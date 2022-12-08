@@ -44,7 +44,7 @@ This is module 3 Project from BeyondCSS
 How I use font-sizes <br>
 Basically this is how Devin did it
 
-```
+```scss
 $font-sizes: (
  900: 5rem,
  800: 3.75rem,
@@ -59,7 +59,7 @@ Later on he change 900,800 and 600 to a fluid type of font with Clamp
 
 My code
 
-```
+```scss
 $font-sizes: (
   "classic": (
     300: rem(16),
@@ -80,7 +80,7 @@ $font-sizes: (
 
 **Then I create custom properties and utilities classes**
 
-```
+```scss
 :root {
  @each $font-family, $value in $font-families {
     --ff-#{$font-family}: "#{$value}", serif;
@@ -115,7 +115,7 @@ and inside this selector is going to be custom properties with fluid-font-size
 
 This way i can use the data- attribute to convert my static font size to a fluid font-size.
 
-```
+```scss
 @each $font-size, $sizes-map in $font-sizes {
   @each $size-name, $size-value in $sizes-map {
     @if $font-size == "classic" {
@@ -191,7 +191,7 @@ if one of this conditions is not valid just console.log Browser is not Firefox
 
 Code:
 
-```
+```js
 "use strict";
 const browser = navigator.userAgent.match(/firefox|fxiso/i);
 const sectionHeader = document.querySelectorAll(".js-section-header");
